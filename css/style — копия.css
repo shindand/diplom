@@ -1,0 +1,916 @@
+html {
+   font-size: 62.5%;
+}
+@font-face {
+    font-family: OpenSans-Bold;
+    src: url("/fonts/OpenSans-Bold.woff");
+ font-display: swap;
+}
+
+@font-face {
+    font-family: OpenSans-Regular;
+    src: url("/fonts/OpenSans-Regular.woff");
+  font-display: swap;
+}
+
+body {
+   margin: 0;
+   padding: 0;
+}
+
+/*************************************************      Шапка сайта           *****************************************/
+
+/*************************************************      Фон шапки сайта           *****************************************/
+
+.header {
+   max-width: 1660px;
+    min-width: 450px;
+   height: 450px;
+  background-image: url("/images/banner-bg.jpg");
+  background-position: 0 0;
+ background-size: cover;
+  box-sizing: border-box;
+  position: relative;
+ padding-right: 1px;
+ margin-bottom: 56px;
+ margin-left: auto;
+ margin-right: auto;
+}
+
+.header::after {
+   content: "";
+   background-color: #000000;
+   opacity: 0.6;
+   position: absolute;
+   top: 0;
+   right: 0;
+   left: 0;
+   bottom: 0;
+   max-width: 1660px;
+   min-width: 450px;
+   height: 450px;
+
+}
+
+/*************************************************      КОНЕЦ ФонУ шапки сайта           *****************************************/
+
+.container {
+   max-width: 1200px;
+   min-width: 450px;
+   margin-left: auto;
+   margin-right: auto;
+}
+
+/*************************************************      Логотип сайта           *****************************************/
+
+.menu-logo {
+   opacity: 1;
+   position: relative;
+   z-index: 1;
+  display: flex;
+  justify-content: space-between; 
+  padding-top: 24px;
+  width: 100%;
+   height: 50px;
+}
+
+.logo {
+   width: 179px; 
+   height: 41px; 
+  padding-left: 17px;
+   padding-top: 4px;
+   display: inline-block;
+}
+
+/*************************************************      КОНЕЦ Логотипу сайта           *****************************************/
+
+/*************************************************      Меню сайта           *****************************************/
+
+.nav {
+   align-items: center;
+   display: inline-block;
+   padding-right: 19px;
+}
+
+.nav ul {
+   width: 488px;
+}
+.nav li {
+   list-style-type: none;
+   text-transform: uppercase;
+   color: #fff;
+   display: inline-block;
+   font-family: OpenSans-Regular;
+  font-size: 13px;
+ font-weight: 400;  
+}
+
+.nav li a {
+   color: #fff;
+   text-decoration: none;
+}
+.nav li:hover {
+text-decoration: underline;
+color: #ffffff;
+}
+
+.nav li::before {
+   content: "";
+  padding-left: 30px;
+}
+
+/*************************************************      КОНЕЦ Меню сайта           *****************************************/
+
+/***************************************************************      Заголовок h1         ***********/
+
+.title {
+   display: flex;
+   margin-left: auto;
+   margin-right: auto;
+   margin-top: 100px;
+  box-sizing: border-box;
+  width: 700px;
+  text-transform: uppercase;
+  line-height: 75px;
+  text-align: center;
+  color: #fff;
+  opacity: 1;
+  position: relative;
+  z-index: 1;
+   font-size: 45px;
+   font-family: "OpenSans-Bold";
+}
+
+/*******************************************************      КОНЕЦ заголовка      ************/
+
+/************************** Блок тренд ****/
+
+.trends {
+    max-width: 1660px;
+    min-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    gap: 5px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.trends-item {
+    width: 415px;
+    min-height: 320px;
+    background-position: 0 0;
+    background-size: cover;
+     box-sizing: border-box;
+     position: relative;
+     background-color: #eff6f1;
+}
+.trends-item::after{
+    content: "";
+    background-color: #000000;
+    opacity: 0.6;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    max-width: 415px;
+    min-height: 320px;
+}
+.article-trend {
+    flex-grow: 1;
+    max-width: 370px;
+    max-height: 146px;
+    margin: 0 18px 18px;
+    padding: 26px 0;
+    border: 3px solid #b59f5b;
+    position: relative;
+    z-index: 1;
+}
+.article-trend-category {
+    font-size: 14px;
+line-height: 40px;
+text-transform: uppercase;
+color: #b59f5b;
+font-weight: 700;
+font-family: "OpenSans-Bold";
+    padding-left: 35px;
+}
+.article-trend-category a {
+    text-decoration: none;
+    color: #b59f5b;
+}
+.article-trend-category a:hover {
+    text-decoration: underline;
+}
+.article-trend-header {
+    font-size: 20px;
+line-height: 24px;
+text-transform: uppercase;
+color: #ffffff;
+font-weight: 700;
+font-family: "OpenSans-Bold";
+padding-left: 35px;
+}
+.article-trend-header a {
+    text-decoration: none;
+    color: #ffffff;
+}
+.article-trend-header a:hover {
+    text-decoration: none;
+    color: #b59f5b;
+}
+
+.trend1 {
+    display: flex;
+    align-items: flex-end;
+    justify-items: center;
+    background-image: url("/images/trend1.jpg");
+}
+.trend2 {
+    display: flex;
+    align-items: flex-end;
+    justify-items: center;
+    background-image: url("/images/trend2.jpg");
+}
+.trend3 {
+    display: flex;
+    align-items: flex-end;
+    justify-items: center;
+    background-image: url("/images/trend3.jpg");
+}
+.trend4 {
+    display: flex;
+    align-items: flex-end;
+    justify-items: center;
+    background-image: url("/images/trend4.jpg");
+}
+
+.subtitle {
+/*    margin-top: 55px;*/
+    font-size: 20px;
+line-height: 29px;
+text-transform: uppercase;
+color: #0f0d0e;
+font-weight: 700;
+font-family: "OpenSans-Bold";
+text-align: center;
+margin-bottom: 25px;
+}
+.subtitle::after {
+    content: "";
+    margin-top: 8px;
+    display: block;
+    width: 66px;
+    margin-left: auto;
+    margin-right: auto;
+    border-bottom: 3px solid #b59f5b;
+}
+
+/*************************  Конец блока тренд*/
+/*************************************************      Блок страницы сайта           *****************************************/
+
+.page {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   margin-top: 38px;
+   max-width: 1200px;
+   margin-left: auto;
+   margin-right: auto;
+  
+}
+
+/*************************************************      КОНЕЦ БлокУ страницы сайта           *****************************************/
+
+/*************************************************      Блок главной части сайта           *****************************************/
+
+.main {
+   display: block;
+  margin: 0 16px;
+  margin-top: 21px;
+  width: 794px;
+}
+
+.article-main {
+   display: flex;
+ /*  flex-wrap:  wrap;
+  max-width: 800px;
+   min-width: 450px;*/
+   justify-content: space-between;   
+   margin-bottom: 59px;
+  padding: 0;
+}
+.main-last {
+   margin-bottom: 44px;
+}
+
+.main-list {
+   list-style-type: none;
+    list-style-position: inside;
+    margin: 0;
+    padding: 0;
+}
+
+.main-item {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    font-size: 0;
+}
+
+/*************************************************      Блок изображений главной части сайта           *****************************************/ 
+
+.article-main-picture {
+   display: block;
+    width: 383px;  
+}
+
+/* .article-main img {
+   display: block;
+
+}
+*/
+/*************************************************      КОНЕЦ Блоку изображений главной части сайта           *****************************************/
+
+/*************************************************      Блок текстовой части сайта           *****************************************/
+
+.section-items {
+   display: block;
+   width: 383px;
+}
+
+.section-items .category {
+   font-size: 14px;
+   padding: 0;
+   padding-left: 1px;
+   margin: 0;
+   text-transform: uppercase;
+   color: #b59f5b;
+   font-weight: 700;
+   font-family: "OpenSans-Regular";
+   word-spacing: 12px;
+   letter-spacing: 0.7px;
+}
+
+.section-items-header {
+   font-size: 20px;
+   line-height: 24px;
+   text-transform: uppercase;
+   color: #0f0d0e;
+   font-weight: 700;
+   padding: 7px 0 0 0px;
+   margin: 0 0 16px 0;
+   font-family: "OpenSans-Bold";
+}
+.section-items-header a {
+   color: #0f0d0e;
+   text-decoration: none;
+}
+
+
+
+.section-items-header a:hover {
+   color: #b59f5b;
+}
+
+time {
+   font-size: 12px;
+   color: #888888;
+   font-weight: 400;
+   font-family: "OpenSans-Regular";
+  text-transform: lowercase;
+  padding-left: 0px;
+}
+
+.section-items .autor {
+   font-size: 12px;
+   line-height: 40px;
+   color: #000000;
+   font-weight: 700;
+   font-family: "OpenSans-Bold";
+  padding: 0 0 0 13px;
+}
+
+.section-items .text {
+   padding-top: 19px;
+   width: 367px;
+   height: 62px;
+   font-size: 15px;
+   line-height: 22px;
+   color: #0f0d0e;
+   font-weight: 400;
+  font-family: "OpenSans-Regular";
+}
+
+/*************************************************      КОНЕЦ Блоку текстовой части сайта           *****************************************/
+
+/*************************************************      КОНЕЦ БлокУ главной части сайта           *****************************************/
+
+/*************************************************      Блок боковой колонки           *****************************************/
+
+.aside {
+   display: block;
+   margin-right: 13px;  
+   width: 270px;
+}
+
+/*************************************************      Заголовки Блока боковой колонки           *****************************************/
+
+h3 {
+   display: block;
+   width: 270px;
+  font-size: 14px;
+  color: #0f0d0e;
+  font-weight: 700;
+  font-family: "OpenSans-Regular";
+  text-transform: uppercase;
+  text-align: center;
+ box-sizing: border-box;
+ padding-top: 5px;
+  
+   word-spacing: 3px;
+}
+
+h3::after {
+   content: '';
+  display: block; 
+  width: 65px;
+  margin: 10px auto 25px;
+   border-bottom: 3px solid #b59f5b;
+}
+
+.aside-header {
+   display: block;
+   width: 270px;
+  font-size: 14px;
+  line-height: 29px;
+  color: #0f0d0e;
+  font-weight: 700;
+   font-family: "OpenSans-Bold";
+  text-transform: uppercase;
+  text-align: center;
+ box-sizing: border-box;
+ padding-top: 4px;
+
+}
+
+.aside-header::after {
+   content: '';
+  display: block; 
+  width: 65px;
+  margin: 4px auto 25px;
+   border-bottom: 3px solid #b59f5b;
+}
+
+.aside-header h2 {
+   margin: 0;
+  padding: 0;
+  font-size: 14px;
+  line-height: 29px;
+}
+
+
+/*************************************************      КОНЕЦ Заголовкам Блока боковой колонки           *****************************************/
+
+/*************************************************      Секция новосте  Блока боковой колонки           *****************************************/
+
+.article-news {
+      display: flex;
+       justify-content: space-between;
+       margin-bottom: 16px;
+       width: 100%;
+}
+
+/*************************************************      Секция изображений новостей  Блока боковой колонки           *****************************************/
+
+.img-news {
+   display: block;
+   margin: 0;
+   padding-top: 5px;
+   width: 71px;
+   height: 71px;
+}
+
+/*************************************************      КОНЕЦ Секции изображений новостей  Блока боковой колонки           *****************************************/
+
+/*************************************************      Секция тектового описания  новостей  Блока боковой колонки           *****************************************/
+
+.news-article {
+    display: block;        
+    width: 183px;
+    font-size: 14px;
+   color: #000000;
+   font-weight: 700;
+   text-transform: uppercase;
+   font-family: "OpenSans-Regular";
+
+}
+
+.news-article .text {
+   padding-top: 3px;
+   font-size: 14px;
+  line-height: 18px;
+   font-family: "OpenSans-Bold";
+}
+
+.news-article a {
+     text-decoration: none;
+      color: #000000;
+}
+
+.news-article a:hover {
+      color: #b59f5b;
+}
+
+
+/*************************************************      КОНЕЦ Секции тектового описания  новостей  Блока боковой колонки           *****************************************/
+
+/*************************************************      Поиск  новостей  Блока боковой колонки           *****************************************/
+
+.search {
+   margin-top: 59px; 
+   margin-bottom: 48px;
+    width: 270px;
+    height: 48px;
+   position: relative;
+}
+
+.search .input {
+   width: 100%;   
+   height: 48px;
+   padding: 7px 37px 9px 15px;
+   background-color: #f4f7f6;
+   font-size: 13px;
+   color: #000000;
+   font-weight: 400;
+   font-family: "OpenSans-Regular";
+   outline: none;
+}
+
+.search input {
+   border: none;
+}
+
+.search input:focus {
+   background-color: #f4f7f6;
+   outline: 1px solid #b59f5b;
+   box-sizing: border-box;
+}
+
+.search .submit {
+   position: absolute;
+   top: 0;
+   right: 0;
+   width: 48px;
+   height: 48px;
+   background-color: #b59f5b;
+   background-image: url("/svg/search.svg");
+   background-size: 40%;
+   background-position: center;
+   background-repeat: no-repeat;
+  border: none;
+   outline: none;
+}
+
+.search .submit:hover {
+   background-color: #323232;
+}
+
+fieldset {
+   border: none;
+}
+
+/*************************************************      КОНЕЦ ПоискУ  новостей  Блока боковой колонки           *****************************************/
+
+/*************************************************      КОНЕЦ Секции новосте  Блока боковой колонки           *****************************************/
+
+/*************************************************      Подписка на рассылку  новостей  Блока боковой колонки           *****************************************/
+
+.subscribe-email {
+   width: 270px;
+   height: 48px;
+   box-sizing: border-box;
+   padding: 4px 37px 9px 15px;
+   background-color: #f3f7f5;
+   font-size: 14px;
+  color: #0f0d0e;
+  font-weight: 700;
+  font-family: "OpenSans-Regular";
+  border: none;
+   outline: none;
+}
+
+.subscribe-email:focus {
+   outline: 1px solid #b59f5b;
+}
+
+.subscribe {
+   margin-top: 16px;
+  margin-bottom: 20px;
+   margin-right: 2px;
+   padding-left: 2px;
+   width: 270px;
+   height: 48px;
+   box-sizing: border-box;
+   background-color: #b59f5b;
+   text-align: center;
+  font-size: 14px;
+  color: #ffffff;
+  font-weight: 700;
+  font-family: "OpenSans-Bold";
+  text-transform: uppercase;
+  border: none;
+   outline: none;
+}
+
+.subscribe:hover {
+   background-color: #323232;
+}
+
+
+/*************************************************      КОНЕЦ ПодпискЕ на рассылку  новостей  Блока боковой колонки           *****************************************/
+
+/*************************************************      Теги  Блока боковой колонки           *****************************************/
+
+.tag {
+   display: flex;
+   flex-wrap:  wrap;
+   width: 270px;
+   margin-top: 19px;
+     margin-bottom: 42px;
+
+}
+
+.tag-item {
+   display: block;
+  padding: 4px 13px;
+  box-sizing: border-box;
+   margin-right: 7px;
+   margin-bottom: 6px;
+   background-color: rgba(244,243,241,0);
+   border: 3px solid #eeeeee;
+   font-size: 12px;
+   color: #0f0d0e;
+   font-weight: 700;
+   font-family: "OpenSans-Bold";
+  text-transform: uppercase;
+   text-decoration: none;
+}
+
+.tag-item:hover {
+  background-color: rgba(244,243,241,0);
+ outline: 3px solid #b59f5b;
+}
+
+.tag-item a {
+   color: #0f0d0e;
+   text-decoration: none;
+}
+
+.tag ul {
+   display: flex;
+   flex-wrap:  wrap;
+   list-style-type: none;
+    list-style-position: inside;
+    margin: 0;
+    padding: 0;
+}
+.tag li {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+.tag .aside-header::after {
+   content: '';
+  display: block; 
+  width: 65px;
+  margin: 4px auto 13px;
+   border-bottom: 3px solid #b59f5b;
+}
+/*************************************************      КОНЕЦ ТегАМ  Блока боковой колонки           *****************************************/
+
+/*************************************************      Темы  Блока боковой колонки           *****************************************/
+
+.categories {
+   display: block;
+   width: 270px;
+   font-size: 14px;
+   font-weight: 700;
+   color: #000000;
+   font-family: "OpenSans-Bold";
+    text-decoration: none;
+}
+
+.categories::after {
+   content: '';
+  display: block; 
+  width: 270px;
+  margin: 11px 0 13px 0;
+   border-bottom: 1px solid #eeeeee;
+}
+
+.categories a {
+       color: #000000;
+       text-decoration: none;
+}
+
+.categories a:hover {
+   color: #b59f5b;
+}
+
+sup {
+    font-size: 12px;
+    color: #b59f5b;
+    font-weight: 700;
+   font-family: "OpenSans-Regular";
+   padding-left: 5px;
+}
+.categories .aside-header::after {
+   content: '';
+  display: block; 
+  width: 65px;
+  margin: 4px auto 22px;
+   border-bottom: 3px solid #b59f5b;
+}
+/******************      КОНЕЦ Темам  Блока боковой колонки           *****************************************/
+
+/*********************      КОНЕЦ Блоку боковой колонки           *****************************************/
+
+/*********** наши изделия ***********/
+.product {
+    max-width: 1200px;
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 65px;
+}
+.product-item {
+    display: flex;
+    flex-direction: column;
+}
+.product-item-picture {
+    align-self: center; 
+}
+.product-item-subject {
+    width: 347px;
+height: 267px;
+background-color: rgba(0,0,0,0);
+border: 3px solid #b59f5b;
+margin-top: -35px;
+position: relative;
+z-index: 1;
+box-sizing: border-box;
+padding: 0 20px;
+}
+
+.product-header {
+    padding-top: 50px;
+    font-size: 20px;
+line-height: 24px;
+text-transform: uppercase;
+color: #0f0d0e;
+font-weight: 700;
+font-family: "OpenSans-Bold";
+
+}
+
+.product-text {
+    font-size: 15px;
+    line-height: 22px;
+    color: #0f0d0e;
+    font-weight: 400;
+    font-family: "OpenSans-Regular";
+}
+.product-text a {
+    text-decoration: none;
+    color: #b59f5b;
+}
+.product-text a:hover {
+    text-decoration: none;
+    color: #b59f5b;
+}
+.product-price-large {
+    font-size: 14px;
+line-height: 24px;
+text-decoration: line-through;
+text-transform: uppercase;
+color: #0f0d0e;
+font-weight: 700;
+font-family: "OpenSans-Bold";
+}
+.product-price-small {
+    font-size: 20px;
+line-height: 24px;
+text-transform: uppercase;
+color: #0f0d0e;
+font-weight: 700;
+font-family: "OpenSans-Bold";
+}
+.button-buy {
+    width: 140px;
+height: 48px;
+background-color: #b59f5b;
+border: none;
+}
+.button-buy-text {
+    font-size: 14px;
+line-height: 40px;
+text-transform: uppercase;
+color: #ffffff;
+font-weight: 700;
+font-family: "OpenSans-Bold";
+}
+.button-buy:hover {
+    background-color: #323232;
+}
+.product-price-buy {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 25px;
+}
+
+/************* Конец наши изделия  *************/
+
+/***************************      Подвал сайта           *****************************************/
+
+footer {
+     display: block;
+      height: 83px;
+      margin-top: 5px;
+      background-color: #f4f7f6;
+      text-align: center;
+}
+
+footer ul {
+   list-style-type: none;
+    list-style-position: inside;
+/*   margin: 17px 50px 0 37;*/
+   margin-top: 24px;
+   padding-left: 0;
+
+}
+
+footer li {
+   list-style-type: none;
+   padding: 0;
+    margin: 0;
+   font-size: 0;
+display: inline-block;
+}
+
+/*************************************************          Социальные сети           *****************************************/
+
+.social {
+     display: inline-block;
+      padding-top: 33px;
+padding-left: 5px;
+}
+
+.dribbble {
+   padding-left: 3px;
+}
+.pinterest {
+   padding-left: 23px;
+}
+
+.tumblr {
+  padding-left: 22px;
+}
+
+/*************************************************      КОНЕЦ    Социальные сети           *****************************************/
+
+/*************************************************     Копирайт     *****************************************/
+
+.copyright {
+     display: block;
+     text-align: center;
+     margin: 71px 0 5px 10px;
+     font-size: 12px;
+     color: #999999;
+     font-weight: 700;
+    font-family: "OpenSans-Regular";
+    word-spacing: 0.17em;
+}
+
+.copyright a {
+     color: #999999;
+     text-decoration: none;
+}
+.copyright:hover {
+   text-decoration: none;
+}
+
+/*************************************************    КОНЕЦ копирайт     *****************************************/
+
+/*************************************************      КОНЕЦ Подвалу сайта           *****************************************/
+
+.visually-hidden {
+ position: absolute;
+ width: 1px;
+ height: 1px;
+ margin: -1px;
+ padding: 0;
+ border: 0;
+ clip: rect(0, 0, 0, 0);
+ overflow: hidden;
+} 
