@@ -3,13 +3,13 @@ html {
 }
 @font-face {
   font-family: OpenSans-Bold;
-  src: url("/fonts/OpenSans-Bold.woff");
+  src: url("../fonts/OpenSans-Bold.woff");
   font-display: swap;
 }
 
 @font-face {
   font-family: OpenSans-Regular;
-  src: url("/fonts/OpenSans-Regular.woff");
+  src: url("../fonts/OpenSans-Regular.woff");
   font-display: swap;
 }
 
@@ -26,7 +26,7 @@ body {
   max-width: 166rem;
   min-width: 32rem;
   height: 450px;
-  background-image: url("/images/banner-bg.jpg");
+  background-image: url("../images/banner-bg.jpg");
   background-position: 0 0;
   background-size: cover;
   box-sizing: border-box;
@@ -226,25 +226,25 @@ body {
   display: flex;
   align-items: flex-end;
   justify-items: center;
-  background-image: url("/images/trend1.jpg");
+  background-image: url("../images/trend1.jpg");
 }
 .trend2 {
   display: flex;
   align-items: flex-end;
   justify-items: center;
-  background-image: url("/images/trend2.jpg");
+  background-image: url("../images/trend2.jpg");
 }
 .trend3 {
   display: flex;
   align-items: flex-end;
   justify-items: center;
-  background-image: url("/images/trend3.jpg");
+  background-image: url("../images/trend3.jpg");
 }
 .trend4 {
   display: flex;
   align-items: flex-end;
   justify-items: center;
-  background-image: url("/images/trend4.jpg");
+  background-image: url("../images/trend4.jpg");
 }
 
 .subtitle {
@@ -560,7 +560,7 @@ h3::after {
   width: 48px;
   height: 48px;
   background-color: #b59f5b;
-  background-image: url("/svg/search.svg");
+  background-image: url("../svg/search.svg");
   background-size: 40%;
   background-position: center;
   background-repeat: no-repeat;
@@ -945,7 +945,7 @@ footer li {
   height: 18px;
   border-radius: 2px;
   background-color: #000000;
-  background-image: url("/svg/form-x.svg");
+  background-image: url("../svg/form-x.svg");
   position: relative;
   top: -25px;
   left: 370px;
@@ -978,7 +978,7 @@ footer li {
 .select {
   -webkit-appearance: none;
   -moz-appeaance: none;
-  background-image: url("/svg/form-arrows.svg");
+  background-image: url("../svg/form-arrows.svg");
   background-size: 10px;
   background-repeat: no-repeat;
   background-position: right 5px center;
@@ -1037,7 +1037,7 @@ footer li {
   vertical-align: middle;
   width: 20px;
   height: 20px;
-  background-image: url("/svg/form-empty-circle.svg");
+  background-image: url("../svg/form-empty-circle.svg");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: 20px;
@@ -1046,7 +1046,7 @@ footer li {
 
 .popup-radio:checked + .popup-radio-text::before {
   content: "";
-  background-image: url("/svg/form-circle.svg");
+  background-image: url("../svg/form-circle.svg");
 }
 
 @media (min-width: 641px) and (max-width: 1200px) {
@@ -1165,7 +1165,7 @@ footer li {
     max-width: 64rem;
     min-width: 32rem;
     height: 630px;
-    background-image: url("/images/banner-mobile.jpg");
+    background-image: url("../images/banner-mobile.jpg");
     background-position: 0 0;
     /*background-size: cover;*/
     box-sizing: border-box;
