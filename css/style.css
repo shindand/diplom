@@ -921,7 +921,7 @@ footer li {
   display: flex;
   align-items: center;
   justify-content: center;
-  display: none;  /***      !!!!!  Включает/выключает popup   !!!!!***/
+  /***display: none;        !!!!!  Включает/выключает popup   !!!!!***/
 }
 .popup-wrapper::after {
   content: "";
