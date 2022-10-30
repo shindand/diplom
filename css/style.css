@@ -23,9 +23,10 @@ body {
 /*************************************************      Фон шапки сайта           *****************************************/
 
 .header {
-  max-width: 166rem;
-  min-width: 32rem;
-  height: 450px;
+ /* max-width: 166rem;
+  min-width: 32rem;*/
+  width: 100%;
+  min-height: 450px;
   background-image: url("../images/banner-bg.jpg");
   background-position: 0 0;
   background-size: cover;
@@ -46,16 +47,17 @@ body {
   right: 0;
   left: 0;
   bottom: 0;
-  max-width: 166rem;
-  min-width: 32rem;
-  height: 450px;
+  /*max-width: 166rem;
+  min-width: 32rem;*/
+  width: 100%;
+  min-height: 450px;
 }
 
 /*************************************************      КОНЕЦ ФонУ шапки сайта           *****************************************/
 
 .container {
   max-width: 120rem;
-  min-width: 45rem;
+  /*min-width: 45rem;*/
   margin-left: auto;
   margin-right: auto;
 }
@@ -149,16 +151,19 @@ body {
 /************************** Блок тренд ****/
 
 .trends {
-  max-width: 166rem;
-  min-width: 120rem;
+/*  max-width: 166rem;
+  min-width: 120rem;*/
+  width: 100%;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
-  gap: 5px;
-  margin-left: auto;
-  margin-right: auto;
+  /*gap: 5px;*/
+ /* margin-left: auto;
+  margin-right: auto;*/
 }
 .trends-item {
-  width: 415px;
+  /*width: 415px;*/
+  width: calc(100%/4 - 5px);
   min-height: 320px;
   background-position: 0 0;
   background-size: cover;
@@ -175,13 +180,15 @@ body {
   right: 0;
   left: 0;
   bottom: 0;
-  max-width: 415px;
+  /*max-width: 415px;*/
+  width: 100%;
   min-height: 320px;
 }
 .article-trend {
   flex-grow: 1;
-  max-width: 370px;
-  max-height: 146px;
+  /*max-width: 370px;*/
+  width: calc(100%/4 - 5px - 36px;);
+  min-height: 146px;
   margin: 0 18px 18px;
   padding: 26px 0;
   border: 3px solid #b59f5b;
@@ -211,7 +218,7 @@ body {
   color: #ffffff;
   font-weight: 700;
   font-family: "OpenSans-Bold";
-  padding-left: 35px;
+  padding: 0 35px;
 }
 .article-trend-header a {
   text-decoration: none;
@@ -249,6 +256,8 @@ body {
 
 .subtitle {
   /*    margin-top: 55px;*/
+  display: inline-block;
+  width: 100%;
   font-size: 20px;
   line-height: 29px;
   text-transform: uppercase;
@@ -274,7 +283,10 @@ body {
 .page {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  /*justify-content: space-between;*/
+  justify-content: center;
+  gap: 35px;
+
   margin-top: 38px;
   max-width: 120rem;
   margin-left: auto;
@@ -289,7 +301,10 @@ body {
   display: block;
   margin: 0 16px;
   margin-top: 21px;
-  max-width: 79.4rem;
+  /*max-width: 79.4rem;*/
+  /*width: 100%;*/
+
+
 }
 
 .article-main {
@@ -297,7 +312,7 @@ body {
   /*  flex-wrap:  wrap;
   max-width: 800px;
    min-width: 450px;*/
-  justify-content: space-between;
+  /*justify-content: space-between;*/
   margin-bottom: 59px;
   padding: 0;
 }
@@ -323,7 +338,7 @@ body {
 
 .article-main-picture {
   display: block;
-  width: 383px;
+  /*max-width: 383px;*/
 }
 
 /* .article-main img {
@@ -337,7 +352,7 @@ body {
 
 .section-items {
   display: block;
-  width: 383px;
+  /*max-width: 383px;*/
   margin-left: 26px;
 }
 
@@ -349,9 +364,15 @@ body {
   text-transform: uppercase;
   color: #b59f5b;
   font-weight: 700;
-  font-family: "OpenSans-Regular";
+  font-family: "OpenSans-Bold";
   word-spacing: 12px;
   letter-spacing: 0.7px;
+}
+.section-items .category a {
+  text-decoration: none;
+}
+.section-items .category a {
+  color: #b59f5b;
 }
 
 .section-items-header {
@@ -393,8 +414,8 @@ time {
 
 .section-items .text {
   padding-top: 19px;
-  width: 367px;
-  height: 62px;
+  /*width: 367px;*/
+  /*height: 62px;*/
   font-size: 15px;
   line-height: 22px;
   color: #0f0d0e;
@@ -415,7 +436,7 @@ time {
 }
 
 /*************************************************      Заголовки Блока боковой колонки           *****************************************/
-
+/*
 h3 {
   display: block;
   width: 270px;
@@ -437,7 +458,7 @@ h3::after {
   width: 65px;
   margin: 10px auto 25px;
   border-bottom: 3px solid #b59f5b;
-}
+}*/
 
 .aside-header {
   display: block;
@@ -530,6 +551,15 @@ h3::after {
   height: 48px;
   position: relative;
 }
+
+.search-mailing {
+  margin-top: 59px;
+  margin-bottom: 260px;
+  width: 270px;
+  height: 48px;
+}
+
+
 
 .search .input {
   width: 100%;
@@ -695,7 +725,7 @@ fieldset {
   text-decoration: none;
 }
 
-.categories::after {
+.line::after {
   content: "";
   display: block;
   width: 270px;
@@ -731,28 +761,33 @@ sup {
 /*********************      КОНЕЦ Блоку боковой колонки           *****************************************/
 
 /*********** наши изделия ***********/
+
 .product {
   max-width: 120rem;
   margin-right: auto;
   margin-left: auto;
   display: flex;
+  flex-wrap: wrap;
+  /*align-items: flex-start;*/
   justify-content: space-between;
   margin-bottom: 65px;
 }
 .product-item {
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 .product-item-picture {
-  align-self: center;
-  flex-grow: 1;
+ /* align-self: center;
+  flex-grow: 1;*/
+  /*position: static;*/
 }
 .product-item-subject {
   width: 347px;
-  height: 267px;
+  min-height: 330px;
   background-color: rgba(0, 0, 0, 0);
   border: 3px solid #b59f5b;
-  margin-top: -35px;
+  top: -35px;
   position: relative;
   z-index: 1;
   box-sizing: border-box;
@@ -769,12 +804,18 @@ sup {
   font-family: "OpenSans-Bold";
 }
 
+.product-header h3 {
+  border-style : none;
+}
+
 .product-text {
   font-size: 15px;
   line-height: 22px;
   color: #0f0d0e;
   font-weight: 400;
   font-family: "OpenSans-Regular";
+  padding-top: 5px;
+  margin-top: 0;
 }
 .product-text a {
   text-decoration: none;
@@ -822,6 +863,14 @@ sup {
   display: flex;
   justify-content: space-between;
   padding-top: 25px;
+  margin-bottom: 25px;
+}
+.subtitle-product {
+  margin-bottom: 40px;
+}
+.product-img {
+  /*margin-top: -180px;*/
+  max-width: 100%;
 }
 
 /************* Конец наши изделия  *************/
@@ -857,10 +906,39 @@ footer li {
 
 .social {
   display: inline-block;
-  padding-top: 33px;
+  padding-top: 30px;
   padding-left: 5px;
 }
 
+.social-link {
+  width: 44px;
+  height: 24px;
+  background-repeat: no-repeat;
+  background-size: 20px;
+  background-position: center;
+  display: inline-block;
+}
+.dribbble {
+background-image: url("https://shindand.github.io/diplom/svg/001-dribbble.svg");
+}
+.pinterest {
+background-image: url("https://shindand.github.io/diplom/svg/002-pinterest.svg");
+}
+
+.tumblr {
+background-image: url("https://shindand.github.io/diplom/svg/003-tumblr.svg");
+}
+
+.social-link-text {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  clip: rect(1px, 1px, 1px, 1px);
+}
+
+
+
+/*
 .dribbble {
   padding-left: 3px;
 }
@@ -871,6 +949,7 @@ footer li {
 .tumblr {
   padding-left: 22px;
 }
+*/
 
 /*************************************************      КОНЕЦ    Социальные сети           *****************************************/
 
@@ -921,7 +1000,7 @@ footer li {
   display: flex;
   align-items: center;
   justify-content: center;
-  display: none;    /***     !!!!!  Включает/выключает popup   !!!!!***/
+  display: none;   /******     !!!!!  Включает/выключает popup   !!!!!***/
 }
 .popup-wrapper::after {
   content: "";
@@ -1049,14 +1128,26 @@ footer li {
   background-image: url("../svg/form-circle.svg");
 }
 
+/****************** Планшетная версия ************************/
+
 @media (min-width: 641px) and (max-width: 1200px) {
+
   .title {
     font-size: 40px;
     line-height: 55px;
     width: 640px;
   }
 
-  .trends {
+  .trends-item {
+    width: calc(50% - 5px);
+    margin-bottom: 5px;
+  }
+  
+  .article-trend {
+    width: calc(50% - 5px - 36px;);
+  }
+
+ /* .trends {
     max-width: 120rem;
     min-width: 64.1rem;
     display: flex;
@@ -1080,28 +1171,109 @@ footer li {
     right: 0;
     left: 0;
     bottom: 0;
-    max-width: 415px; /* 415*/
+    max-width: 415px; 
     min-height: 320px;
+  }
+  */
+
+  .page {
+    justify-content: center;
+    margin-left: 35px;
+    margin-right: 35px;
+  }
+  .main {
+    /*flex-grow: 1;*/
+    /*margin-left: 35px;*/
+    /*margin-right: 35px;*/
+    /*width: 100%;*/
   }
   .article-main {
     display: flex;
-    flex-wrap: wrap;
-    max-width: 400px;
-    justify-content: space-between;
-    margin-bottom: 59px;
+    /*flex-wrap: wrap;*/
+    /*max-width: 400px;*/
+    /*justify-content: space-between;*/
+    flex-direction: column;
+    margin-bottom: 40px;
     padding: 0;
+  
+    /*width: 100%;*/
+    /*margin-left: 35px;*/
   }
-  .page {
-    justify-content: center;
+  .section-items {
+    margin-top: 15px;
+    margin-left: 0;
   }
-  .product {
-    flex-wrap: wrap;
-    justify-content: space-between;
+  .section-items > .text::after {
+    content: "";
+    display: block;
+    width: 100%;
+    margin-top: 20px;
+    border-bottom: 3px solid #eeeeee;
   }
-  .product-item {
-    margin-bottom: 20px;
+  
+  .article-main-picture {
+  max-width: 100%;
+  height: auto;
+  }
+  /*
+.section-items {
+  
+  width: 100%;
+}
+
+.main-list {
+  width: 100%;
+}
+
+.section-items .text {
+  width: 100%;
+}*/
+
+  .aside {
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    /*margin-right: 35px;*/
   }
 
+  .product {
+    flex-wrap: wrap;
+    /*justify-content: space-between;*/
+    margin-left: 75px;
+    margin-right: 75px;
+/*gap: 75px;*/
+    margin-bottom: 0;
+    
+  }
+  .product-item {
+    display: flex;
+    flex-direction: column;
+      max-width: calc(50% - 55px);  
+    min-width: 180px;
+        align-items: center;
+
+    padding: 0;
+    
+  }
+  .product-item-picture {
+    width: 100%;
+     min-width: 150px;
+   }
+   .product-item-subject {
+    /*display: block;*/
+    min-height: 300px;
+        background-color: rgba(0, 0, 0, 0);
+    border: 3px solid #b59f5b;
+    top: -35px;
+    width: calc(100% + 60px);
+    position: relative;
+    z-index: 1;
+    box-sizing: border-box;
+    padding: 0 30px;
+  
+  }
+
+ 
   .nav_text {
     display: none;
   }
@@ -1161,6 +1333,10 @@ footer li {
   }
 }
 
+/******************* КОНЕЦ планшетной версии *************/
+
+/***************  Мобильная версия *********************/
+
 @media (max-width: 640px) {
   .header {
     max-width: 64rem;
@@ -1172,7 +1348,7 @@ footer li {
     box-sizing: border-box;
     position: relative;
     padding-right: 1px;
-    margin-bottom: 56px;
+    margin-bottom: 40px;
     margin-left: auto;
     margin-right: auto;
   }
@@ -1225,6 +1401,16 @@ footer li {
     width: 320px;
     margin-top: 60px;
   }
+
+  .trends-item {
+    width: 100%;
+    margin-bottom: 5px;
+  }
+  
+  .article-trend {
+    width: calc(100% - 36px);
+  }
+ /* 
   .trends {
     max-width: 64rem;
     min-width: 32rem;
@@ -1246,31 +1432,131 @@ footer li {
     right: 0;
     left: 0;
     bottom: 0;
-    max-width: 415px; /* 415*/
+    max-width: 415px; 
     min-height: 320px;
   }
-
+*/
   .page {
     max-width: 64rem;
     flex-wrap: wrap;
     justify-content: center;
+ 
   }
   .article-main {
     display: flex;
-    flex-wrap: wrap;
-    max-width: 400px;
-    justify-content: space-between;
-    margin-bottom: 59px;
+    /*flex-wrap: wrap;*/
+    /*max-width: 400px;*/
+    /*justify-content: space-between;*/
+    flex-direction: column;
+    margin-bottom: 40px;
     padding: 0;
   }
-  .product {
-    flex-wrap: wrap;
-    justify-content: center;
+  .section-items {
+    margin-top: 15px;
+    margin-left: 0;
   }
-  .product-item {
-    margin-bottom: 20px;
+  .section-items > .text::after {
+    content: "";
+    display: block;
+    width: 100%;
+    margin-top: 20px;
+    border-bottom: 3px solid #eeeeee;
+  }
+  
+  .article-main-picture {
+  max-width: 100%;
+  height: auto;
   }
 
+  .aside {
+    
+    margin-right: 15px;
+    margin-left: 15px;
+    width: 100%;
+  }
+  .aside-header {
+    width: 100%;
+    text-align: center;
+    padding-top: 0;
+  }
+
+
+  .news-article {
+    display: block;
+    width: 100%;
+margin-left: 15px;
+  }
+
+  .search {
+    width: 100%;
+  }
+  .search-mailing {
+    width: 100%;
+  }
+  .subscribe-email {
+    width: 100%;
+  }
+  
+  
+  .subscribe {
+    width: 100%;
+  }
+  
+  .tag {
+    width: 100%;
+  }
+  .categories {
+    display: block;
+    width: 100%;
+    font-size: 14px;
+    font-weight: 700;
+    color: #000000;
+    font-family: "OpenSans-Bold";
+    text-decoration: none;
+  }
+  
+  .line::after {
+    content: "";
+    display: block;
+    width: 100%;
+    margin: 11px 0 13px 0;
+    border-bottom: 1px solid #eeeeee;
+  }
+
+  .product {
+    flex-wrap: wrap;
+    margin-left: 55px;
+    margin-right: 55px;
+    margin-bottom: 0;
+    
+  }
+  .product-item {
+    display: flex;
+    flex-direction: column;
+      max-width: 100%;  
+    min-width: 180px;
+        align-items: center;
+
+    padding: 0;
+    
+  }
+  .product-item-picture {
+    width: 100%;
+     min-width: 150px;
+   }
+   .product-item-subject {
+    /*display: block;*/
+    min-height: 300px;
+        background-color: rgba(0, 0, 0, 0);
+    border: 3px solid #b59f5b;
+    top: -35px;
+    width: calc(100% + 60px);
+    position: relative;
+    z-index: 1;
+    box-sizing: border-box;
+    padding: 0 30px;
+  
+  }
   .menu__button {
     display: block;
   }
@@ -1345,9 +1631,60 @@ footer li {
   }
 }
 
-@media (max-width: 640px) and (orientation: landscape) {
-  .popup {
-    position: static;
-    margin-top: 230px;
-  }
+@media (max-width: 1200px) and (orientation: landscape) {
+  
+
+.popup {
+  width: 40rem;
+  min-height: 30rem;
+  background-color: #ffffff;
+  position: fixed;
+  z-index: 4;
+}
+.popup-header {
+  padding-top: 0;
+  margin-top: 0;
+}
+.popup-text {
+  margin-bottom: 5px;
+  margin-top: 0;
+}
+.popup-form {
+  margin-right: 30px;
+}
+.select {
+
+  /*width: 80%;*/
+height: 40px;
+}
+.popup-textarea {
+  /*width: 75%;*/
+  height: 3rem;
+  background-color: #f4f7f6;
+  padding: 15px;
+}
+.popup-button {
+ /* width: 80%;*/
+  height: 40px;
+  background-color: #b59f5b;
+  border: none;
+  margin-bottom: 10px;
+  font-size: 14px;
+  line-height: 40px;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-weight: 700;
+  margin-top: 5px;
+}
+.popup-close {
+  width: 18px;
+  height: 18px;
+  border-radius: 2px;
+  background-color: #000000;
+  background-image: url("../svg/form-x.svg");
+  position: relative;
+  top: -25px;
+  left: 380px;
+}
+
 }
